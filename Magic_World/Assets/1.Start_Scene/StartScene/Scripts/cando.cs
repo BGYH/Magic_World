@@ -13,11 +13,11 @@ public class cando : MonoBehaviour
     public GameObject go;
     private GameObject preGo = null;
 
-    public AudioSource m_audioBGM = null;
+    //public AudioSource m_audioBGM = null;
 
     public GameObject m_objMainMenu = null; // 메인 메뉴 관리를 위한 오브젝트
     public GameObject m_objSubMenu = null; // 허브 메뉴 관리를 위한 옵젝트
-    public GameObject m_objOptionMenu = null; // 허브 메뉴 관리를 위한 옵젝트
+   //public GameObject m_objOptionMenu = null; // 허브 메뉴 관리를 위한 옵젝트
 
 
     public Image whiteScreen = null;
@@ -35,7 +35,7 @@ public class cando : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Start_Scene")
         {
             Debug.Log("if문에 들어옴");
-            SoundBGMController();
+            //SoundBGMController();
             Debug.Log("첫 시작 sound 컨트롤러 함수 동작 끝");
         }    
     }
@@ -114,10 +114,10 @@ public class cando : MonoBehaviour
                 m_objMainMenu.SetActive(false);
                 m_objSubMenu.SetActive(true);
                 break;
-            case "Option_Button":
-                m_objMainMenu.SetActive(false);
-                m_objOptionMenu.SetActive(true);
-                break;
+            //case "Option_Button":
+            //    m_objMainMenu.SetActive(false);
+            //    m_objOptionMenu.SetActive(true);
+            //   break;
             case "Exit_Button":
 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
@@ -143,20 +143,20 @@ public class cando : MonoBehaviour
                 break;
             case "Back_Button":
                 m_objMainMenu.SetActive(true);
-                m_objOptionMenu.SetActive(false);
+                //m_objOptionMenu.SetActive(false);
                 m_objSubMenu.SetActive(false);
                 break;
             case "ToMainScene":
                 SceneManager.LoadScene("Start_Scene");
                 break;
-            case "Sound_On_Button":
-                ScoundBGMSave(true);
-                SoundBGMController();
-                break;
-            case "Sound_Off_Button":
-                ScoundBGMSave(false);
-                SoundBGMController();
-                break;
+           // case "Sound_On_Button":
+           //     ScoundBGMSave(true);
+           //     SoundBGMController();
+           //     break;
+           // case "Sound_Off_Button":
+           //     ScoundBGMSave(false);
+           //     SoundBGMController();
+           //     break;
             default:
                 Debug.Log("버튼 이벤트를 설정하지 않았습니다.");
                 break;
@@ -198,37 +198,37 @@ public class cando : MonoBehaviour
         SceneManager.LoadScene(_nextSceneName);
     }
 
-    void ScoundBGMSave(bool _setOnOff)
-    {
-        if(_setOnOff == true)
-            PlayerPrefs.SetInt("BGM", 1);
-        else
-            PlayerPrefs.SetInt("BGM", 0);
-    }
+   // void ScoundBGMSave(bool _setOnOff)
+   // {
+   //    if(_setOnOff == true)
+   //         PlayerPrefs.SetInt("BGM", 1);
+   //     else
+   //         PlayerPrefs.SetInt("BGM", 0);
+   // }
 
-    void SoundBGMController()
-    {
-        Debug.Log("SoundBGMController 함수 동작");
+    //void SoundBGMController()
+    //{
+    //    Debug.Log("SoundBGMController 함수 동작");
         // 첫 시작시 BGM 키를 찾고 없다면 BGM키를 만들음.
-        if (PlayerPrefs.HasKey("BGM") == false)
-        {
-            PlayerPrefs.SetInt("BGM", 1);
-        }
+    //    if (PlayerPrefs.HasKey("BGM") == false)
+    //    {
+    //        PlayerPrefs.SetInt("BGM", 1);
+    //    }
 
-        Debug.Log(PlayerPrefs.GetInt("BGM") + "  ,BGM Key Get Number"); // 1  ,BGM Key Get Number
+    //    Debug.Log(PlayerPrefs.GetInt("BGM") + "  ,BGM Key Get Number"); // 1  ,BGM Key Get Number
 
         // BGM 키가 0이라면 BGM을 멈춤
         // BGM 키의 값이 1이라면 BGM을 플레이
-        if (PlayerPrefs.GetInt("BGM") == 0)
-        {
-            m_audioBGM.Stop();
-            Debug.Log("사운드 멈춤");
-        }
-        else
-        {
-            m_audioBGM.Play();
-            Debug.Log("사운드 플레이");
-        }
+  //     if (PlayerPrefs.GetInt("BGM") == 0)
+  //     {
+  //         m_audioBGM.Stop();
+  //         Debug.Log("사운드 멈춤");
+  //     }
+  //     else
+  //     {
+  //          m_audioBGM.Play();
+  //         Debug.Log("사운드 플레이");
+  //      }
 
-    }
+  //  }
 }
