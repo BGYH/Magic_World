@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/2.tutorial/Scene/tutorial02.unity
     guid: caee260bbecf39e44a47a87e67540e01
   - enabled: 1
+    path: Assets/3.PotionRoom/Scenes/PotionRoom007.unity
+    guid: c3f0d715a4418724ba8ac1a9b95d2ef4
+  - enabled: 1
     path: Assets/6.Last_Scene/LastScene/Last_Scene.unity
     guid: f92dfda6574c0dd4bb785010bc97a9a0
   m_configObjects:

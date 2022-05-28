@@ -82,7 +82,7 @@ public class UI_script3 : MonoBehaviour
         yield return StartCoroutine(NormalChat("반대로 아래로 내리면 다시 집어넣을 수도 있단다."));
         yield return StartCoroutine(NormalChat("이제 정말 마법 세계를 즐길 준비가 되었구나"));
         yield return StartCoroutine(NormalChat("행복한 여행이 되기를!"));
-        st.GoToScene(0);//이거 고치기
+        st.GoToScene(3);//이거 고치기
 
 
 
