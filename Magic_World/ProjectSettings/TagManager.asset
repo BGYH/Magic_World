@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - electric
+  - Animal
+  - earth
+  - FxTemporaire
+  - Item
+  - wind
+  - water
+  - light
+  - Door
+  - fire
+  - dark
+  - illusion
+  - Water
+  - Fly
+  - Climb
+  - Stair
   layers:
   - Default
   - TransparentFX
@@ -25,17 +41,17 @@ TagManager:
   - 
   - 
   - 
+  - Animal
+  - 
+  - 
+  - Enemy
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Item
   - 
   m_SortingLayers:
   - name: Default

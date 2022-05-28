@@ -145,6 +145,6 @@ public class chatController : MonoBehaviour
 
     void SceneChange()
     {
-        SceneManager.LoadScene("testScene");
+        SceneManager.LoadScene("Flying_Start_Scene");
     }
 }
