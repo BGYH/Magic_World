@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 858b712805ebc4349958c3636ad40b29
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 21100
   internalIDToNameTable:
   - first:
       1: 100000
@@ -939,14 +939,7 @@ ModelImporter:
           preInfinity: 3
           postInfinity: 3
           rotationOrder: 0
-      events:
-      - time: 0.45762816
-        functionName: PlaySound
-        data: Wing Flap
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask:
       - path: 
         weight: 1
@@ -3261,16 +3254,14 @@ ModelImporter:
       - time: 0.009177492
         functionName: Eyes
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5,
-          type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.57834095
         functionName: Eyes
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5,
-          type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5, type: 3}
         floatParameter: 0
         intParameter: 1
         messageOptions: 0
@@ -3436,8 +3427,7 @@ ModelImporter:
       - time: 0.43076897
         functionName: Eyes
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5,
-          type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -3884,8 +3874,7 @@ ModelImporter:
       - time: 0.13461436
         functionName: Eyes
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5,
-          type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5, type: 3}
         floatParameter: 0
         intParameter: 1
         messageOptions: 0
@@ -4217,8 +4206,7 @@ ModelImporter:
       - time: 0.15350877
         functionName: FireAttack
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 58e889cf9faf0e646a645c31d629350b,
-          type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 58e889cf9faf0e646a645c31d629350b, type: 3}
         floatParameter: 0
         intParameter: 1
         messageOptions: 0
@@ -5275,6 +5263,7 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 0
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -5284,6 +5273,9 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -5312,12 +5304,12 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c869acf0f32d55340b4dd39f39cc49f3,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c869acf0f32d55340b4dd39f39cc49f3, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
