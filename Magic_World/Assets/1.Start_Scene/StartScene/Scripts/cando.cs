@@ -107,7 +107,7 @@ public class cando : MonoBehaviour
         switch (_buttonName)
         {
             case "Story_Button":
-               // StartCoroutine(NextSceneLoad("")); //여기가 스토리 모드 버튼 누를시 로드
+                StartCoroutine(NextSceneLoad("tutorial")); //여기가 스토리 모드 버튼 누를시 로드
                 Debug.Log("버튼 이벤트를 설정하지 않았습니다.");
                 break;
             case "Auto_Button":
@@ -135,7 +135,7 @@ public class cando : MonoBehaviour
                 break;
             case "Magic_Stick_Button":
                 // SceneManager.LoadScene("MagicStick");
-                StartCoroutine(NextSceneLoad("MagicStick"));
+                StartCoroutine(NextSceneLoad("tutorial"));
                 break;
             case "Magic_Battle_Button":
                 // SceneManager.LoadScene("MagicBattle");
