@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/4.Flying/Scenes/Flying_Map1.unity
     guid: b708a8c848fa51347a32b967b74139c7
   - enabled: 1
+    path: Assets/5.MagicBattle/Scenes/battle.unity
+    guid: 70aa8795063903c4c9c8f34c7ca73f94
+  - enabled: 1
     path: Assets/6.Last_Scene/LastScene/Last_Scene.unity
     guid: f92dfda6574c0dd4bb785010bc97a9a0
   m_configObjects:

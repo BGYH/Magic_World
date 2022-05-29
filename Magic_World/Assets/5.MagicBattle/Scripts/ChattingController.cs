@@ -81,7 +81,8 @@ public class ChattingController : MonoBehaviour
         yield return new WaitForSeconds(3.0f);
         Abtn.SetActive(true);
         yield return StartCoroutine(NormalChat("이 숲을 점령하고 있던 괴물에게 들켰어!"));
-        yield return StartCoroutine(NormalChat("네 마법 지팡이로 괴물을 물리쳐주겠니?"));
+        yield return StartCoroutine(NormalChat("네 마법으로 괴물을 물리쳐주겠니?"));
+        yield return StartCoroutine(NormalChat("오른손의 조이스틱을 위로 올려 지팡이를 꺼내봐."));
         yield return StartCoroutine(NormalChat("왼손의 조이스틱으로 원하는 마법을 선택할 수 있고, 오른손의 트리거를 눌러 공격할 수 있어."));
         yield return StartCoroutine(NormalChat("너에게 행운이 있기를"));
         yield return StartCoroutine(NormalChat(" "));
