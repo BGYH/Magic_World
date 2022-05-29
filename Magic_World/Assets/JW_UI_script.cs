@@ -82,10 +82,10 @@ public class JW_UI_script : MonoBehaviour
         yield return new WaitForSeconds(1f); // 1초 대기
         screen.gameObject.SetActive(false);
 
-        yield return StartCoroutine(NormalChat("축하해! 너가 이겼구나!"));
+        yield return StartCoroutine(NormalChat("축하해! 네가 해냈어!"));
 
-        yield return StartCoroutine(NormalChat("봐봐! 드래곤도 기뻐하고 있어."));
-        yield return StartCoroutine(NormalChat("앞으로의 모험도 기대된다."));
+        yield return StartCoroutine(NormalChat("하루가 정말 빨리 지나간 것 같아."));
+        yield return StartCoroutine(NormalChat("앞으로의 모험도 잘 헤쳐나가 보자."));
         yield return StartCoroutine(NormalChat("너의 미래에도 행운이 가득하길."));
         
         yield return StartCoroutine(NormalChat(" "));
