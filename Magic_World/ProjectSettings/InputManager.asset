@@ -489,8 +489,8 @@ InputManager:
     m_Name: UpDown
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: c
-    positiveButton: space
+    negativeButton: joystick button 1
+    positiveButton: joystick button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

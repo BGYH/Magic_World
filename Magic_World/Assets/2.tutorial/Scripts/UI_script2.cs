@@ -67,8 +67,8 @@ public class UI_script2 : MonoBehaviour
     }
     IEnumerator TextPractice()
     {
-        yield return StartCoroutine(NormalChat("이제 여기 있는 3개의 지팡이를 합성할 차례란다."));
-        yield return StartCoroutine(NormalChat("준비 됐니? 그럼 시작해보자!"));
+        yield return StartCoroutine(NormalChat("지팡이를 골랐으니, 여기 있는 3개의 지팡이를 합성해야 해."));
+        yield return StartCoroutine(NormalChat("준비 됐니? 자, 시작해보자."));
         Aimage.SetActive(false);
         next_event = 1; //다 누르면 패널번호 1로 바꾸기
         d = 1; //삭제하는 변수 1로 바꾸기

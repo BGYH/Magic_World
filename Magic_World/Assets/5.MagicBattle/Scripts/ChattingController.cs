@@ -53,7 +53,7 @@ public class ChattingController : MonoBehaviour
 
     IEnumerator TextPractice()
     {
-        yield return StartCoroutine(NormalChat("이런, 실수로 괴물의 숲에 들어오고 말았구나."));
+        yield return StartCoroutine(NormalChat("이런, 여긴 유령의 숲인데..여기까지 와버렸구나."));
         yield return StartCoroutine(NormalChat("이곳은 들어오면 위험한데..."));
         yield return StartCoroutine(NormalChat(" "));
         Abtn.SetActive(false);
@@ -80,11 +80,11 @@ public class ChattingController : MonoBehaviour
     {
         yield return new WaitForSeconds(3.0f);
         Abtn.SetActive(true);
-        yield return StartCoroutine(NormalChat("이 숲을 점령하고 있던 괴물에게 들켰어!"));
-        yield return StartCoroutine(NormalChat("네 마법으로 괴물을 물리쳐주겠니?"));
+        yield return StartCoroutine(NormalChat("이 숲의 주인이 화가 난 것 같구나."));
+        yield return StartCoroutine(NormalChat("마법을 쓰지 않으면 벗어나기 힘들거야."));
         yield return StartCoroutine(NormalChat("오른손의 조이스틱을 위로 올려 지팡이를 꺼내봐."));
-        yield return StartCoroutine(NormalChat("왼손의 조이스틱으로 원하는 마법을 선택할 수 있고, 오른손의 트리거를 눌러 공격할 수 있어."));
-        yield return StartCoroutine(NormalChat("너에게 행운이 있기를"));
+        yield return StartCoroutine(NormalChat("왼손의 조이스틱으로 원하는 마법을 선택할 수 있고,조이스틱을 당기면서 오른손의 트리거를 눌러야 공격할 수 있어."));
+        yield return StartCoroutine(NormalChat("네 힘을 믿어봐, 벗어날 수 있을 거란다."));
         yield return StartCoroutine(NormalChat(" "));
         Abtn.SetActive(false);
     }
@@ -94,9 +94,9 @@ public class ChattingController : MonoBehaviour
         Debug.Log("마지막 설명창");
         yield return new WaitForSeconds(6.0f);
         Abtn.SetActive(true);
-        yield return StartCoroutine(NormalChat("이런, 강력한 공격에 지팡이가 고장났네!"));
-        yield return StartCoroutine(NormalChat("너의 특별한 친구에게 도움을 요청해보자."));
-        yield return StartCoroutine(NormalChat("오른손의 B 버튼을 누르고 별 모양을 그려봐!"));
+        yield return StartCoroutine(NormalChat("이런, 유령의 힘때문에 마법이 안 나가는 것 같은데?"));
+        yield return StartCoroutine(NormalChat("너의 특별한 친구에게 도움을 요청해보렴."));
+        yield return StartCoroutine(NormalChat("오른손의 B 버튼을 누르고 별 모양을 그리면 될거야."));
         yield return StartCoroutine(NormalChat(" "));
         Abtn.SetActive(false);
     }

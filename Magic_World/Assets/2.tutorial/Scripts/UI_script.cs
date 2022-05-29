@@ -82,13 +82,13 @@ public class UI_script : MonoBehaviour
     
     IEnumerator TextPractice()
     {
-        yield return StartCoroutine(NormalChat("안녕? 네가 이번에 들어온 아이구나."));
-        yield return StartCoroutine(NormalChat("여기는 선택된 인간만이 들어올 수 있는 숲이란다."));
+        yield return StartCoroutine(NormalChat("어서 오렴. 네가 이번에 들어온 아이로구나."));
+        yield return StartCoroutine(NormalChat("여기는 선택된 인간만이 들어올 수 있는 숲이지."));
         yield return StartCoroutine(NormalChat("여기서 생활하려면 지팡이가 필요할 거야."));
         yield return StartCoroutine(NormalChat("너를 둘러싸고 있는 지팡이 중 3개를 골라보렴."));
         yield return StartCoroutine(NormalChat("선택은 늘 신중하게 해야 해."));
-        yield return StartCoroutine(NormalChat("한 번 한 선택은 절대 바꿀 수 없단다."));
-        yield return StartCoroutine(NormalChat("원하는 지팡이를 가리키고 B버튼을 누르렴."));
+        yield return StartCoroutine(NormalChat("한 번 한 선택은 절대 돌이킬 수 없으니..."));
+        yield return StartCoroutine(NormalChat("신중하게, 원하는 지팡이를 가리켜 B버튼을 눌러보렴."));
         Aimage.SetActive(false);
         next_Panel = 1; //다 누르면 패널번호 1로 바꾸기
         yield return StartCoroutine(NormalChat(" "));

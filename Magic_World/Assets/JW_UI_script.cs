@@ -39,7 +39,8 @@ public class JW_UI_script : MonoBehaviour
         {
             writerText += chat[a];
             chatText.text = writerText;
-            yield return new WaitForSeconds(0.1f);
+            // yield return new WaitForSeconds(0.05f);
+            yield return null;
         }
 
         m_objImageAButton.SetActive(true);
@@ -82,12 +83,12 @@ public class JW_UI_script : MonoBehaviour
         yield return new WaitForSeconds(1f); // 1초 대기
         screen.gameObject.SetActive(false);
 
-        yield return StartCoroutine(NormalChat("축하해! 네가 해냈어!"));
+        yield return StartCoroutine(NormalChat("축하해! 여정을 모두 끝냈구나."));
 
-        yield return StartCoroutine(NormalChat("하루가 정말 빨리 지나간 것 같아."));
-        yield return StartCoroutine(NormalChat("앞으로의 모험도 잘 헤쳐나가 보자."));
-        yield return StartCoroutine(NormalChat("너의 미래에도 행운이 가득하길."));
-        
+        yield return StartCoroutine(NormalChat("마법 세계에서 적응하느라 고생했어."));
+        yield return StartCoroutine(NormalChat("유령과 마주쳤을땐 나도 놀랐지만..잘 빠져나왔어."));
+        yield return StartCoroutine(NormalChat("다음에 기회가 된다면, 또 이 세계로 와보렴. 기다리고 있을게."));
+        yield return StartCoroutine(NormalChat("너의 어떤 미래에도 행운이 가득하길."));
         yield return StartCoroutine(NormalChat(" "));
         // 페이드 아웃
         screen.gameObject.SetActive(true);

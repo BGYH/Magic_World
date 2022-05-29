@@ -74,14 +74,14 @@ public class UI_script3 : MonoBehaviour
         SceneTransitionManager st = GameObject.Find("SceneTransitionManager").GetComponent<SceneTransitionManager>();
         lighting.SetActive(true);
         Aimage.SetActive(true);
-        yield return StartCoroutine(NormalChat("이것이 이제부터 네가 사용할 지팡이란다."));
-        yield return StartCoroutine(NormalChat("네가 고른 3개의 속성이 다 담겨있지. 받아 가거라."));
+        yield return StartCoroutine(NormalChat("이 지팡이가 이제부터 네 길잡이가 되어줄 거란다."));
+        yield return StartCoroutine(NormalChat("네가 고른 3개의 속성이 전부 담겨있지. 받아 가거라."));
         move_to_player = 1;
         can_change = true;
-        yield return StartCoroutine(NormalChat("오른쪽 컨트롤러의 조이스틱을 위로하면 지팡이를 꺼낼 수 있지."));
+        yield return StartCoroutine(NormalChat("오른쪽 컨트롤러의 조이스틱을 위로하면 지팡이를 꺼낼 수 있고,"));
         yield return StartCoroutine(NormalChat("반대로 아래로 내리면 다시 집어넣을 수도 있단다."));
-        yield return StartCoroutine(NormalChat("이제 정말 마법 세계를 즐길 준비가 되었구나"));
-        yield return StartCoroutine(NormalChat("행복한 여행이 되기를!"));
+        yield return StartCoroutine(NormalChat("자, 이제 정말 마법 세계를 즐길 준비가 되었구나."));
+        yield return StartCoroutine(NormalChat("부디 즐거운 여정이 되기를..!"));
         st.GoToScene(3);//이거 고치기
 
 
