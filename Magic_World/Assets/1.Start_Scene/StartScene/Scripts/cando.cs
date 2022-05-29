@@ -131,7 +131,7 @@ public class cando : MonoBehaviour
                 break;
             case "Magic_Potion_Button":
                 // SceneManager.LoadScene("MagicPotion");
-                StartCoroutine(NextSceneLoad("MagicPotion"));
+                StartCoroutine(NextSceneLoad("PotionRoom007"));
                 break;
             case "Magic_Stick_Button":
                 // SceneManager.LoadScene("MagicStick");
