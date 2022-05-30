@@ -44,8 +44,8 @@ public class chatController : MonoBehaviour
         {
             Abtn.SetActive(true);
             yield return new WaitForSeconds(7.0f * Time.deltaTime);
-            yield return StartCoroutine(NormalChat(R_name + "과 " + B_name + "의 드래곤을 탄생시켰구나."));
-            yield return StartCoroutine(NormalChat("이제 드래곤과 함께 마법세계를 탐방하러 가볼까?"));
+            yield return StartCoroutine(NormalChat(R_name + "과 " + B_name + "의 드래곤을 소환했구나."));
+            yield return StartCoroutine(NormalChat("자, 이제 드래곤과 함께 밖으로 나가볼까?"));
             yield return StartCoroutine(NormalChat("   "));
             Dragon_R.GetComponent<dragonHappy>().happyStart();
             Abtn.SetActive(false);
@@ -54,8 +54,8 @@ public class chatController : MonoBehaviour
         {
             Abtn.SetActive(true);
             yield return new WaitForSeconds(7.0f * Time.deltaTime);
-            yield return StartCoroutine(NormalChat(R_name + "과 " + G_name + "의 드래곤을 탄생시켰구나."));
-            yield return StartCoroutine(NormalChat("네 친구 드래곤과 함께 마법세계를 탐방하러 가볼까?"));
+            yield return StartCoroutine(NormalChat(R_name + "과 " + G_name + "의 드래곤을 소환했구나."));
+            yield return StartCoroutine(NormalChat("자, 이제 드래곤과 함께 밖으로 나가볼까?"));
             yield return StartCoroutine(NormalChat("   "));
             Dragon_B.GetComponent<dragonHappy>().happyStart();
             Abtn.SetActive(false);
@@ -64,8 +64,8 @@ public class chatController : MonoBehaviour
         {
             Abtn.SetActive(true);
             yield return new WaitForSeconds(7.0f * Time.deltaTime);
-            yield return StartCoroutine(NormalChat(R_name + "과 " + Y_name + "의 드래곤을 탄생시켰구나."));
-            yield return StartCoroutine(NormalChat("네 친구 드래곤과 함께 마법세계를 탐방하러 가볼까?"));
+            yield return StartCoroutine(NormalChat(R_name + "과 " + Y_name + "의 드래곤을 소환했구나."));
+            yield return StartCoroutine(NormalChat("자, 이제 드래곤과 함께 밖으로 나가볼까?"));
             yield return StartCoroutine(NormalChat("   "));
             Corgi_1.GetComponent<dragonHappy>().happyStart();
             Abtn.SetActive(false);
@@ -74,8 +74,8 @@ public class chatController : MonoBehaviour
         {
             Abtn.SetActive(true);
             yield return new WaitForSeconds(7.0f * Time.deltaTime);
-            yield return StartCoroutine(NormalChat(B_name + "와 " + G_name + "의 드래곤을 탄생시켰구나."));
-            yield return StartCoroutine(NormalChat("네 친구 드래곤과 함께 마법세계를 탐방하러 가볼까?"));
+            yield return StartCoroutine(NormalChat(B_name + "와 " + G_name + "의 드래곤을 소환했구나."));
+            yield return StartCoroutine(NormalChat("자, 이제 드래곤과 함께 밖으로 나가볼까?"));
             yield return StartCoroutine(NormalChat("   "));
             Dragon_G.GetComponent<dragonHappy>().happyStart();
             Abtn.SetActive(false);
@@ -84,8 +84,8 @@ public class chatController : MonoBehaviour
         {
             Abtn.SetActive(true);
             yield return new WaitForSeconds(7.0f * Time.deltaTime);
-            yield return StartCoroutine(NormalChat(B_name + "와 " + Y_name + "의 드래곤을 탄생시켰구나."));
-            yield return StartCoroutine(NormalChat("네 친구 드래곤과 함께 마법세계를 탐방하러 가볼까?"));
+            yield return StartCoroutine(NormalChat(B_name + "와 " + Y_name + "의 드래곤을 소환했구나."));
+            yield return StartCoroutine(NormalChat("자, 이제 드래곤과 함께 밖으로 나가볼까?"));
             yield return StartCoroutine(NormalChat("   "));
             Corgi_2.GetComponent<dragonHappy>().happyStart();
             Abtn.SetActive(false);
@@ -94,8 +94,8 @@ public class chatController : MonoBehaviour
         {
             Abtn.SetActive(true);
             yield return new WaitForSeconds(7.0f * Time.deltaTime);
-            yield return StartCoroutine(NormalChat(Y_name + "와 " + G_name + "의 드래곤을 탄생시켰구나."));
-            yield return StartCoroutine(NormalChat("네 친구 드래곤과 함께 마법세계를 탐방하러 가볼까?"));
+            yield return StartCoroutine(NormalChat(Y_name + "와 " + G_name + "의 드래곤을 소환했구나."));
+            yield return StartCoroutine(NormalChat("자, 이제 드래곤과 함께 밖으로 나가볼까?"));
             yield return StartCoroutine(NormalChat("   "));
             Dragon_Y.GetComponent<dragonHappy>().happyStart();
             Abtn.SetActive(false);
@@ -136,9 +136,9 @@ public class chatController : MonoBehaviour
     IEnumerator TextPractice()
     {
         yield return StartCoroutine(NormalChat("여기 4개의 마법약이 보이지?"));
-        yield return StartCoroutine(NormalChat("원하는 마법약 2개를 선택해 마법의 항아리에 하나씩 넣어봐."));
+        yield return StartCoroutine(NormalChat("원하는 마법약 2개를 선택해 마법의 항아리에 하나씩 넣어보렴."));
         yield return StartCoroutine(NormalChat("그립을 이용해 마법약을 잡을 수 있어. 손을 놓으면 다시 선택할 수 있지."));
-        yield return StartCoroutine(NormalChat("특별한 친구를 만나게 될거야!"));
+        yield return StartCoroutine(NormalChat("특별한 친구를 만나게 될거야."));
         yield return StartCoroutine(NormalChat("   "));
         Abtn.SetActive(false);
     }
