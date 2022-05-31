@@ -75,6 +75,10 @@ public class Health : MonoBehaviour
             Monster.GetComponent<Play_Animation>().dead();
             Monster.GetComponent<Play_Animation>().dead_fin(); //몬스터가 죽는 animation 실행
 
+            MA.magic1.SetActive(true);
+            MA.magic2.SetActive(true);
+            MA.magic3.SetActive(true);
+            MA.Damage.SetActive(true); //다시 활성화 시켜줘야 또 할때 멀쩡함
             StartCoroutine(changeScene());
         }
     }
@@ -82,10 +86,6 @@ public class Health : MonoBehaviour
     public IEnumerator changeScene()
     {
         yield return new WaitForSeconds(10.0f);
-        MA.magic1.SetActive(true);
-        MA.magic2.SetActive(true);
-        MA.magic3.SetActive(true);
-        MA.Damage.SetActive(true); //다시 활성화 시켜줘야 또 할때 멀쩡함
 
         Change_fade cf = GameObject.Find("FadeOut").GetComponent<Change_fade>();
         cf.GoToScene(7);
