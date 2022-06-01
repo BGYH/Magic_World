@@ -33,7 +33,7 @@ public class Change_Dragon : MonoBehaviour
     void set_active(bool a)
     {
         string fileName = "TestJson";//제이슨 파일명
-        string path = Application.dataPath + "/" + fileName + ".Json";//제이슨이 있는 경로
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";//제이슨이 있는 경로
 
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];

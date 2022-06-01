@@ -109,7 +109,7 @@ public class magicAttack : MonoBehaviour
     GameObject Get_magic(string title)
     {
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json";
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";
 
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];
@@ -153,7 +153,7 @@ public class magicAttack : MonoBehaviour
     {
 
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json";
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";
 
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];

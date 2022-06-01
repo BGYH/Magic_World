@@ -20,7 +20,7 @@ public class MovementRecognizer : MonoBehaviour
    
    
 
-    public float newPositionThresholdDistance = 0.01f;
+    public float newPositionThresholdDistance = 0.005f;
     public GameObject HelpmeDragon;
     public bool creationMode = true;
     public string newGestureName;
@@ -39,7 +39,7 @@ public class MovementRecognizer : MonoBehaviour
     void Start()
     {
         movementSource = find_pos(find_magic(4));
-        string[] gestureFiles = Directory.GetFiles(Application.dataPath, "*.xml");
+        string[] gestureFiles = Directory.GetFiles(Application.streamingAssetsPath, "*.xml");
         foreach (var item in gestureFiles)
         {
             trainingSet.Add(GestureIO.ReadGestureFromFile(item));
@@ -139,7 +139,7 @@ public class MovementRecognizer : MonoBehaviour
     {
 
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json";
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";
 
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];

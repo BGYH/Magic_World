@@ -58,7 +58,7 @@ public class change_interactor : MonoBehaviour
     void set_active(bool a)
     {
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json";
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";
 
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];

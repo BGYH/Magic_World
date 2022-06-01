@@ -44,7 +44,7 @@ public class Save_Wand : MonoBehaviour
             Debug.Log(json);
             
 
-            File.WriteAllText(Application.dataPath + "/TestJson.json", JsonUtility.ToJson(player));
+            File.WriteAllText(Application.persistentDataPath + "/TestJson.json", JsonUtility.ToJson(player));
             ray.save_num = 2; //세이브 넘버 2로 보내서 한번만 저장한다.
         }
 

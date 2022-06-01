@@ -113,7 +113,7 @@ public class PotEvent : MonoBehaviour
         DragonTada.Play();
 
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json";
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];
         filestream.Read(data, 0, data.Length);
@@ -166,7 +166,7 @@ public class PotEvent : MonoBehaviour
 
         json = JsonUtility.ToJson(myplayerState);
         Debug.Log("############################# " + json);
-        File.WriteAllText(Application.dataPath + "/TestJson.json", JsonUtility.ToJson(myplayerState));
+        File.WriteAllText(Application.persistentDataPath + "/TestJson.json", JsonUtility.ToJson(myplayerState));
 
         StartCoroutine(chatController.GetComponent<chatController>().whichDragon());
     }

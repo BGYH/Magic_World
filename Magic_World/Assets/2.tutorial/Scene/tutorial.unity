@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0032042477, g: 0.006343002, b: 0.014482708, a: 1}
+  m_IndirectSpecularColor: {r: 0.0032029166, g: 0.0063425726, b: 0.014481785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2603,6 +2603,38 @@ PrefabInstance:
     - target: {fileID: 198371139109276902, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198371139109276902, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198371139109276902, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198371139109276902, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198421910201038450, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198421910201038450, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198421910201038450, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198968408040191748, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198968408040191748, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 199171352032605508, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
       propertyPath: m_Materials.Array.size
@@ -29292,9 +29324,9 @@ Transform:
   m_LocalPosition: {x: -4.510167, y: 10.070349, z: -1.2845263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6740954018430003936}
-  - {fileID: 6740954017974834968}
   - {fileID: 6740954016690709638}
+  - {fileID: 6740954017974834968}
+  - {fileID: 6740954018430003936}
   - {fileID: 6740954017732510496}
   - {fileID: 6740954016879506714}
   m_Father: {fileID: 6740954016834318468}
@@ -30057,7 +30089,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b1b8ba98dfe0ec44db7ac6e2cac0c1ef, type: 3}
 --- !u!4 &6740954016690709638 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5786143147818952334, guid: b1b8ba98dfe0ec44db7ac6e2cac0c1ef, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 6740954016690709637}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6740954016691169729
@@ -45442,7 +45474,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 53070d7f892118b47b3db68289a18c84, type: 3}
 --- !u!4 &6740954017974834968 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4698886534691582677, guid: 53070d7f892118b47b3db68289a18c84, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 6740954017974834967}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6740954017981093484
@@ -50583,7 +50615,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 2fc120bf30128d24686a08951a3b907f, type: 3}
 --- !u!4 &6740954018430003936 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2085961259084134174, guid: 2fc120bf30128d24686a08951a3b907f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 6740954018430003935}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6740954018432685315

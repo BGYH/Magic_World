@@ -124,7 +124,7 @@ public class JW_UI_script : MonoBehaviour
     void Setctive()
     {
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json"; // 파일 경로
+        string path = Application.persistentDataPath + "/" + fileName + ".Json"; // 파일 경로
         // string path = Application.dataPath + "/" + fileName + ".Json"; // 파일 경로
         Debug.Log("path : "+path);
 

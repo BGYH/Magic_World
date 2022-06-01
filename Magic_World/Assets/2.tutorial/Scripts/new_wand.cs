@@ -36,7 +36,7 @@ public class new_wand : MonoBehaviour
     {
         //Place_three_wand p = GameObject.Find("PlayController").GetComponent<Place_three_wand>();
         string fileName = "TestJson";
-        string path = Application.dataPath + "/" + fileName + ".Json";
+        string path = Application.persistentDataPath + "/" + fileName + ".Json";
 
         FileStream filestream = new FileStream(path, FileMode.Open);
         byte[] data = new byte[filestream.Length];
@@ -52,7 +52,7 @@ public class new_wand : MonoBehaviour
         rnd = Random.Range(0, 3);
         final = rnd_wand(rnd);
         myplayerState.final_wand = final;
-        File.WriteAllText(Application.dataPath + "/TestJson.json", JsonUtility.ToJson(myplayerState)); //파일에 적어준다.
+        File.WriteAllText(Application.persistentDataPath + "/TestJson.json", JsonUtility.ToJson(myplayerState)); //파일에 적어준다.
         Instantiate(match_wand(rnd_wand(rnd)), new_wand_pos.position, new_wand_pos.rotation);
         
 
