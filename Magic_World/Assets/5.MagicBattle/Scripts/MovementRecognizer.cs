@@ -17,8 +17,6 @@ public class MovementRecognizer : MonoBehaviour
    // public Transform movementSource;
     public GameObject movementSource;
     public GameObject XR;
-   
-   
 
     public float newPositionThresholdDistance = 0.005f;
     public GameObject HelpmeDragon;
@@ -26,6 +24,8 @@ public class MovementRecognizer : MonoBehaviour
     public string newGestureName;
 
     public float recognitionThreshold = 0.9f;
+
+    public GameObject DragonSpawn;
     
     [System.Serializable]
     public class UnityStringEvent : UnityEvent<string> { }
@@ -39,7 +39,7 @@ public class MovementRecognizer : MonoBehaviour
     void Start()
     {
         movementSource = find_pos(find_magic(4));
-        string[] gestureFiles = Directory.GetFiles(Application.streamingAssetsPath, "*.xml");
+        string[] gestureFiles = Directory.GetFiles(Application.dataPath, "*.xml");
         foreach (var item in gestureFiles)
         {
             trainingSet.Add(GestureIO.ReadGestureFromFile(item));
@@ -58,7 +58,8 @@ public class MovementRecognizer : MonoBehaviour
         }
         else if (isMoving && !isPressed) //movement 끝
         {
-            EndMovement();
+            //EndMovement();
+            DragonSpawn.GetComponent<DragonHelpMe>().Spawn();
         }
         else if (isMoving && isPressed) //movement의 업데이트
         {
@@ -112,7 +113,7 @@ public class MovementRecognizer : MonoBehaviour
             Debug.Log(result.GestureClass + result.Score);
             if (result.Score > recognitionThreshold)
             {
-                OnRecognized.Invoke(result.GestureClass);
+                //OnRecognized.Invoke(result.GestureClass);
             }
         }
     }

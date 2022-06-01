@@ -139,7 +139,7 @@ public class cando : MonoBehaviour
                 break;
             case "Magic_Battle_Button":
                 // SceneManager.LoadScene("MagicBattle");
-                StartCoroutine(NextSceneLoad("MagicBattle"));
+                StartCoroutine(NextSceneLoad("battle"));
                 break;
             case "Back_Button":
                 m_objMainMenu.SetActive(true);

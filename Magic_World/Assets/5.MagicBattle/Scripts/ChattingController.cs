@@ -85,7 +85,6 @@ public class ChattingController : MonoBehaviour
         yield return StartCoroutine(NormalChat("오른손의 조이스틱을 위로 올려 지팡이를 꺼내봐."));
         yield return StartCoroutine(NormalChat("왼손의 조이스틱으로 원하는 마법을 선택할 수 있고,조이스틱을 당기면서 오른손의 트리거를 눌러야 공격할 수 있어."));
         yield return StartCoroutine(NormalChat("네 힘을 믿어봐, 벗어날 수 있을 거란다."));
-        yield return StartCoroutine(NormalChat(" "));
         Abtn.SetActive(false);
     }
 
@@ -97,7 +96,6 @@ public class ChattingController : MonoBehaviour
         yield return StartCoroutine(NormalChat("이런, 유령의 힘때문에 마법이 안 나가는 것 같은데?"));
         yield return StartCoroutine(NormalChat("너의 특별한 친구에게 도움을 요청해보렴."));
         yield return StartCoroutine(NormalChat("오른손의 B 버튼을 누르고 별 모양을 그리면 될거야."));
-        yield return StartCoroutine(NormalChat(" "));
         Abtn.SetActive(false);
     }
 }
